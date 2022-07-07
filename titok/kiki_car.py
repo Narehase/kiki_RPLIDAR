@@ -122,7 +122,7 @@ maps = map_making_v3.map_hint(2500,2500)
 
 mapz = mapza.copy()
 
-for i in range(1000):
+for i in range(10):
     mapz = mapza.copy()
     iop = code(ser)
     
@@ -148,8 +148,8 @@ for i in range(1000):
         mapz = maps.point(mapz, s, g, traking= True)
         #mapz = maps.sub_fly(mapz,1)
     lis = cv2.resize(mapz/255., (1000,1000))
-    cv2.imshow("lili", lis)
-    cv2.waitKey(1)
+    #cv2.imshow("lili", lis)
+    #cv2.waitKey(1)
 cv2.imwrite("test_map.png",lis*255.)
 
 
