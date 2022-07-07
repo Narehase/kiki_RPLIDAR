@@ -2,7 +2,6 @@ import cv2
 import numpy as np
 import serial
 from math import atan,pi,floor
-from kiki_modul import finds
 import map_making_v3
 def _CheckSum(data):
     try:
